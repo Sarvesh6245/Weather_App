@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spalsh_screen"
+    tools:context=".splashscreen">
+
+    <ImageView
+        android:id="@+id/splash_screen_icon"
+        android:layout_width="211dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="283dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_cloud" />
+
+    <TextView
+        android:id="@+id/splash_screen_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:fontFamily="@font/merriweathersans_bold"
+        android:text="Weather Matters \n We've Got the details"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_icon"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_icon"
+        app:layout_constraintTop_toBottomOf="@+id/splash_screen_icon" />
+
+    <TextView
+        android:id="@+id/splash_screen_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/merriweathersans_bold"
+        android:text="DESIGN BY \n neat roots"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_text"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_text"
+        app:layout_constraintTop_toBottomOf="@+id/splash_screen_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
